@@ -140,4 +140,79 @@ console.log(10 != 10); // false
 console.log(10 < 8 && 19 > 5 && 17 > 7); // false (AND operator)
 console.log(10 > 8 || 19 > 5 || 17 > 7); // true (OR operator)
 ```
+---
+
+# 📌 Assignment - Lecture 27  
+
+### 📝 **Topic:** Increment & Decrement Operators in JavaScript  
+
+This assignment contains **JavaScript questions** focusing on **increment (`++`) and decrement (`--`) operators**, covering **basic, complex, and logical issues**.  
+
+---
+
+## **Questions & Expected Outputs**  
+
+### **1️⃣ Increment and Decrement Operators**  
+#### **Q1**  
+```js
+let i = 11; 
+i = i++ + ++i; 
+console.log(i); // Output: 24
+```
+
+#### **Q2**  
+```js
+let a = 11, b = 22, c; 
+c = a + b + a++ + b++ + ++a + ++b; 
+console.log("a=" + a); // Output: 13
+console.log("b=" + b); // Output: 24
+console.log("c=" + c); // Output: 103
+```
+
+#### **Q3**  
+```js
+let i = 0; 
+i = i++ - --i + ++i - i--; 
+console.log(i); // Output: 0
+```
+
+#### **Q4**  
+```js
+let b = true; 
+b++;   
+console.log(b); // Output: 2
+```
+
+---
+
+### **2️⃣ Complex Increment and Decrement Operations**  
+#### **Q5**  
+```js
+let i = 1, j = 2, k = 3; 
+let m = i-- - j-- - k--; 
+console.log("i=" + i); // Output: 0
+console.log("j=" + j); // Output: 1
+console.log("k=" + k); // Output: 2
+console.log("m=" + m); // Output: -4
+```
+
+#### **Q6**  
+```js
+let a = 1, b = 2; 
+console.log(--b - ++a + ++b - --a); // Output: -1
+```
+
+#### **Q7**  
+```js
+let i = 19, j = 29, k; 
+k = i-- - i++ + --j - ++j + --i - j-- + ++i - j++; 
+console.log("i=" + i); // Output: 19
+console.log("j=" + j); // Output: 28
+console.log("k=" + k); // Output: -1
+```
+
+---
+**📌 Keep Practicing & Happy Coding! 🚀**  
+
+---
 

@@ -9,10 +9,11 @@ This repository documents my learning progress from the **Sheryians Coding Schoo
 
 | 📂 Section  | 📜 Description |  
 |------------|---------------|  
-| 🔹 **[Basics](BASICS/)** | Fundamental DSA concepts and coding exercises |  
+| 🔹 **[Basics](BASICS/Basic.md)** | Fundamental DSA concepts and coding exercises |  
 | 🔹 **Coming Soon** | More advanced topics will be added as I progress |  
 
 ---
+
 
 ## 🎯 Purpose of This Repository  
 

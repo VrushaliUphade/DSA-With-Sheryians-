@@ -80,31 +80,46 @@
 //     console.log(10>8 || 19>5 || 17>7); //true
 
 
-//Math functions
-// 1. Math.round()
-console.log(Math.round(10.4));
-// 2. Math.ceil()
-console.log(Math.ceil(10.1));
-// 3. Math.floor()
-console.log(Math.floor(10.2));
-// 5. Math.trunc()
-console.log(Math.trunc(10.2343));
-// 6. Math.pow()
-console.log(Math.pow(5,2)); //5^2 = 25
-// 7. Math.sqrt()
-console.log(Math.sqrt(36));
-// 8. Math.cbrt()
-console.log(Math.cbrt(8));
-// 9. Math.abs()
-console.log(Math.abs(-8));
-// 10.Math.max()
-console.log(Math.max(10,67,90,25));
-// 11.Math.min()
-console.log(Math.min(10,67,90,25));
-// 12.Math.random()
-console.log(Math.random());//0 to 1
-// 13.toFixed()
-let a = 234.0987654
-console.log(a.toFixed(0));
+// //Math functions
+// // 1. Math.round()
+// console.log(Math.round(10.4));
+// // 2. Math.ceil()
+// console.log(Math.ceil(10.1));
+// // 3. Math.floor()
+// console.log(Math.floor(10.2));
+// // 5. Math.trunc()
+// console.log(Math.trunc(10.2343));
+// // 6. Math.pow()
+// console.log(Math.pow(5,2)); //5^2 = 25
+// // 7. Math.sqrt()
+// console.log(Math.sqrt(36));
+// // 8. Math.cbrt()
+// console.log(Math.cbrt(8));
+// // 9. Math.abs()
+// console.log(Math.abs(-8));
+// // 10.Math.max()
+// console.log(Math.max(10,67,90,25));
+// // 11.Math.min()
+// console.log(Math.min(10,67,90,25));
+// // 12.Math.random()
+// console.log(Math.random());//0 to 1
+// // 13.toFixed()
+// let a = 234.0987654
+// console.log(a.toFixed(0));
 
+//    //Q.1 Calculate Compound Intrest
+
+//    let p = Number(prompt("Enter principle"))
+//    let r = Number(prompt("Enter a rate"))
+//    let t = Number(prompt("Enter a time"))
+
+//    //logical part
+//    // A = P * (1 + r/100)^t
+//    // CP = A-P
+
+//    console.log((p * Math.pow(1 + r/100,t)) - p);
    
+//    //Q.2 OTP Genrater
+//    console.log(Math.floor(Math.random() * 9000 + 1000));
+   
+

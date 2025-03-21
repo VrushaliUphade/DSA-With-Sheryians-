@@ -1,8 +1,8 @@
 
 ---
 
-## 📌 Introduction  
-### Lecture 26
+# 📌Lecture 26 - Introduction  
+
 Welcome to my **DSA Basics** documentation! 🚀  
 
 This file serves as a daily log of my learning journey in **Data Structures and Algorithms (DSA)** as part of the **Sheryians Coding School Live Cohort**. I will be updating this file regularly with key concepts, example codes, and explanations.  
@@ -18,8 +18,8 @@ Let's dive into the world of **DSA** and strengthen problem-solving skills! 💡
 
 ---
 
-# JavaScript Basics - DSA Notes
-### Lecture 27
+# 📌Lecture 27 - JavaScript Basics - DSA Notes
+
 ## 1. Sum of Two Integers
 ```js
 let a = 10;
@@ -142,7 +142,7 @@ console.log(10 > 8 || 19 > 5 || 17 > 7); // true (OR operator)
 ```
 ---
 
-# 📌 Assignment - Lecture 27  
+## 💡 Assignment - Lecture 27  
 
 ### 📝 **Topic:** Increment & Decrement Operators in JavaScript  
 
@@ -210,9 +210,217 @@ console.log("i=" + i); // Output: 19
 console.log("j=" + j); // Output: 28
 console.log("k=" + k); // Output: -1
 ```
+# 📌 Lecture 28 - JavaScript Math Functions & Problems 🚀
+
+## ✨ Math Functions in JavaScript 🧮
+
+### 1️⃣ **Rounding Functions** 🔢
+```js
+console.log(Math.round(10.4)); // 👉 Rounds to the nearest integer → 10
+console.log(Math.ceil(10.1));  // 👉 Rounds up to the next integer → 11
+console.log(Math.floor(10.9)); // 👉 Rounds down to the previous integer → 10
+console.log(Math.trunc(10.2343)); // 👉 Removes decimal part → 10
+```
+
+### 2️⃣ **Power & Root Functions** ⚡
+```js
+console.log(Math.pow(5,2));  // 👉 5 raised to the power of 2 → 25
+console.log(Math.sqrt(36));  // 👉 Square root of 36 → 6
+console.log(Math.cbrt(8));   // 👉 Cube root of 8 → 2
+```
+
+### 3️⃣ **Absolute & Random Values 🎲**
+```js
+console.log(Math.abs(-8));  // 👉 Absolute (positive) value → 8
+console.log(Math.max(10,67,90,25)); // 👉 Largest number → 90
+console.log(Math.min(10,67,90,25)); // 👉 Smallest number → 10
+console.log(Math.random()); // 👉 Random number between 0 and 1
+```
+
+### 4️⃣ **Fix Decimal Places 🔍**
+```js
+let a = 234.0987654;
+console.log(a.toFixed(2)); // 👉 Keeps 2 decimal places → 234.10
+```
 
 ---
-**📌 Keep Practicing & Happy Coding! 🚀**  
+
+## 💡 JavaScript Challenges & Solutions 
+
+###  **1. Calculate Compound Interest 💰**
+```js
+let p = Number(prompt("Enter principle"));
+let r = Number(prompt("Enter rate (%)"));
+let t = Number(prompt("Enter time (years)"));
+
+// 🔢 Formula: A = P * (1 + r/100)^t
+let amount = p * Math.pow(1 + r/100, t);
+let compoundInterest = amount - p;
+
+console.log("Compound Interest: ", compoundInterest);
+```
+
+###  **2. OTP Generator 🔐**
+```js
+console.log(Math.floor(Math.random() * 9000 + 1000)); // 👉 Generates a 4-digit OTP
+```
+
+###  **3. Area of a Triangle (Heron's Formula) 📏**
+```js
+let a = Number(prompt("Enter first side"));
+let b = Number(prompt("Enter second side"));
+let c = Number(prompt("Enter third side"));
+
+if (a + b <= c || a + c <= b || b + c <= a) {
+    console.log("⚠️ Triangle is not possible!");
+} else {
+    let s = (a + b + c) / 2;
+    let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+    console.log("Area of Triangle: ", area);
+}
+```
+
+###  **4. Circumference of a Circle 🔄**
+```js
+let r = Number(prompt("Enter radius"));
+console.log("Circumference: ", 2 * Math.PI * r);
+```
+# 📌 Lecture 29 - JavaScript Conditionals 🚀
+
+## ✨ Understanding Conditionals
+Conditionals allow a program to make decisions based on conditions, executing different blocks of code accordingly.
+
+---
+
+## 🔹 **if Statement**  
+Executes a block of code **only if** the condition is `true`.
+
+**Syntax:**
+```js
+if (condition) {
+    // Code executes if condition is true
+}
+```
+
+**Example:**
+```js
+let age = 20;
+if (age >= 18) {
+    console.log("You are eligible to vote.");
+}
+```
+
+---
+
+## 🔹 **if...else Statement**  
+Runs one block **if the condition is true**, otherwise runs the `else` block.
+
+**Syntax:**
+```js
+if (condition) {
+    // Executes if condition is true
+} else {
+    // Executes if condition is false
+}
+```
+
+**Example:**
+```js
+let number = 10;
+if (number % 2 === 0) {
+    console.log("Even number");
+} else {
+    console.log("Odd number");
+}
+```
+
+---
+
+## 🔹 **Multiple if...else Statements**  
+Used when checking **multiple conditions** in sequence.
+
+**Syntax:**
+```js
+if (condition1) {
+    // Executes if condition1 is true
+} else if (condition2) {
+    // Executes if condition2 is true
+} else {
+    // Executes if none of the above conditions are true
+}
+```
+
+**Example:**
+```js
+let temperature = 30;
+if (temperature > 35) {
+    console.log("It's a very hot day!");
+} else if (temperature > 25) {
+    console.log("It's a warm day.");
+} else {
+    console.log("It's a cool day.");
+}
+```
+
+---
+
+✅ **Conditionals help control program flow by executing different blocks of code based on conditions.**
+
+# 📌 Practice Questions - Conditionals in JavaScript
+
+## 1️⃣ Find the Greatest Number
+**Problem:** Accept two numbers and print the greatest between them.
+
+```js
+let a = Number(prompt("Enter first number"));
+let b = Number(prompt("Enter second number"));
+
+if (a > b) {
+    console.log(a + " is the greatest");
+} else {
+    console.log(b + " is the greatest");
+}
+```
+
+---
+
+## 2️⃣ Check Even or Odd
+**Problem:** Accept an integer and check whether it is even or odd.
+
+```js
+let num = Number(prompt("Enter number"));
+
+if (num % 2 == 0) {
+    console.log("Number is even");
+} else {
+    console.log("Number is odd");
+}
+```
+
+---
+
+## 3️⃣ Check Voter Eligibility
+**Problem:** Accept name and age from the user. Check if the user is a valid voter or not.
+
+```js
+let name = prompt("Enter Name");
+let age = Number(prompt("Enter Age"));
+
+if (age >= 18) {
+    console.log(name + " you are a valid voter");
+} else {
+    console.log(name + " you are not a valid voter");
+}
+```
+
+---
+
+✅ **Practice these questions to strengthen your understanding of conditionals!** 🚀
+
+
+---
+
+## *📌 Keep Practicing & Happy Coding! 🚀*  
 
 ---
 

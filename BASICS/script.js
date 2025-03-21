@@ -120,6 +120,85 @@
 //    console.log((p * Math.pow(1 + r/100,t)) - p);
    
 //    //Q.2 OTP Genrater
-//    console.log(Math.floor(Math.random() * 9000 + 1000));
+//    console.log(Math.floor(Math.random() * 9000 + 1000)); //1000 to 9000 
    
+//     //Q.3 area of triangle by heron's formula
+//     let a = Number(prompt("Enter first number"))
+//     let b = Number(prompt("Enter second number"))
+//     let c = Number(prompt("Enter third number"))
 
+// if(a+b <= c || a+c<=b || c+b<=a ){
+//     console.log("not possible");
+// }else{
+//     let s = (a+b+c)/2
+//     console.log(Math.sqrt(s*(s-a)*(s-b)*(s-c))); //3 4 5 = 6
+// }
+  
+  //Q.4 Circumference of circle
+  // let r = Number(prompt("Enter a number"))
+  // console.log(2*Math.PI*r);
+  
+//  //conditionals statements
+// if
+// let age = 20;
+// if (age >= 18) {
+//     console.log("You are eligible to vote.");
+// }
+
+//  //if-else
+// let number = 10;
+// if (number % 2 === 0) {
+//     console.log("Even number");
+// } else {
+//     console.log("Odd number");
+// }
+
+// //if else-if else
+// let temperature = 30;
+// if (temperature > 35) {
+//     console.log("It's a very hot day!");
+// } else if (temperature > 25) {
+//     console.log("It's a warm day.");
+// } else {
+//     console.log("It's a cool day.");
+// }
+
+// // Practice Questions
+
+// //1.Accept two numbers and print the greatest between them
+// let a = Number(prompt("Enter first number"));
+// let b = Number(prompt("Enter second number"));
+
+// if(a>b){
+//   console.log(a+ " is greatest");
+// }else{
+//   console.log(b+ " is greatest");
+// }
+
+//  //2.Accept an integer and check whether it is an even number or odd.
+  
+//    let num = Number(prompt("Enter number"));
+//    if(num % 2 == 0){
+//     console.log("Number is even");
+//    }else{
+//     console.log("Number is odd"); 
+//    }
+
+//  //3.Accept name and age from the user. Check if the user is a valid voter or not.
+//    let name = prompt("Enter Name");
+//    let age = Number(prompt("Enter Age"));
+
+//    if(age>=18){
+//     console.log(name+ " You are a valid voter");
+//    }
+//    else{
+//     console.log(name+ " You are not a valid voter");
+//    }
+
+ //4.Accept three numbers and print the greatest among them.
+
+ //5. Accept a year and check if it a leap year or not (google to find what's leap year) 
+
+ //6. Shop discount - Description on Graphic
+
+ //7. Bijli Bil - Description on Graphic

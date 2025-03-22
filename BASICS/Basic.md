@@ -415,6 +415,26 @@ if (age >= 18) {
 
 ---
 
+## 4️⃣ Check Leap Year or Not
+**Problem:** Accept a year and check if it a leap year or not (google to find what's leap year) 
+
+```js
+   let year = Number(prompt("Enter Year"));
+    let isLeap = false;
+
+    if (year%4==0) {                       
+       if(year%100==0){
+        if(year%400==0) isLeap = true      
+         else isLeap = false             
+       }else{
+       isLeap =true                
+       }
+       }else isLeap = false              
+     console.log(isLeap? "leap year": "not a leap year");
+```
+
+---
+
 ✅ **Practice these questions to strengthen your understanding of conditionals!** 🚀
 
 

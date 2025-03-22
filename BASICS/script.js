@@ -197,8 +197,19 @@
 
  //4.Accept three numbers and print the greatest among them.
 
- //5. Accept a year and check if it a leap year or not (google to find what's leap year) 
+//  //5. Accept a year and check if it a leap year or not (google to find what's leap year) 
+//     let year = Number(prompt("Enter Year"));
+//     let isLeap = false;
 
+//     if (year%4==0) {                       
+//        if(year%100==0){
+//         if(year%400==0) isLeap = true      
+//          else isLeap = false             
+//        }else{
+//        isLeap =true                
+//        }
+//        }else isLeap = false              
+//      console.log(isLeap? "leap year": "not a leap year");
  //6. Shop discount - Description on Graphic
 
  //7. Bijli Bil - Description on Graphic

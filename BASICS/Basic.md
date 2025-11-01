@@ -432,149 +432,187 @@ if (age >= 18) {
        }else isLeap = false              
      console.log(isLeap? "leap year": "not a leap year");
 ```
-📌 Lecture 5 - JavaScript Loops 🚀
-✨ Understanding Loops
+# 📌 Lecture 5 – JavaScript Loops 🚀  
 
-Loops allow us to repeat a block of code multiple times until a certain condition is met.
+## ✨ Understanding Loops  
+
+Loops allow us to repeat a block of code multiple times until a certain condition is met.  
 They are essential for automating repetitive tasks and working with data efficiently.
 
-🔹 for Loop
+---
 
-Used when the number of iterations is known.
+## 🔹 for Loop  
 
-Syntax:
+Used when the number of iterations is known.  
 
+**Syntax:**
+```js
 for (initialization; condition; increment/decrement) {
-    // Code to execute repeatedly
+  // Code to execute repeatedly
 }
+```
 
-
-Example:
-
+**Example:**
+```js
 for (let i = 1; i <= 5; i++) {
-    console.log("Hello World");
+  console.log("Hello World");
 }
+```
 
+✅ The `for` loop is the most commonly used loop for counting, tables, and mathematical calculations.
 
-✅ The for loop is the most commonly used loop for counting, tables, and mathematical calculations.
+---
 
-📌 Practice Questions - Loops in JavaScript
-1️⃣ Print "Hello World" N Times
+## 📘 Practice Questions – Loops in JavaScript  
 
-Problem: Accept an integer n and print "Hello World" n times.
+---
 
+### 1️⃣ Print "Hello World" N Times  
+**Problem:** Accept an integer `n` and print "Hello World" `n` times.  
+
+```js
 let n = Number(prompt("Enter the number"));
 for (let i = 1; i <= n; i++) {
-    console.log("Hello World");
+  console.log("Hello World");
 }
+```
 
-2️⃣ Print Natural Numbers up to N
+---
 
-Problem: Accept a number n and print all natural numbers from 1 to n.
+### 2️⃣ Print Natural Numbers up to N  
+**Problem:** Accept a number `n` and print all natural numbers from 1 to n.  
 
+```js
 let n = Number(prompt("Enter the number"));
 for (let i = 1; i <= n; i++) {
-    console.log(i);
+  console.log(i);
 }
+```
 
-3️⃣ Print Numbers in Reverse (N to 1)
+---
 
-Problem: Accept a number n and print numbers from n to 1 in reverse.
+### 3️⃣ Print Numbers in Reverse (N to 1)  
+**Problem:** Accept a number `n` and print numbers from `n` to 1 in reverse.  
 
+```js
 let n = Number(prompt("Enter the number"));
 for (let i = n; i >= 1; i--) {
-    console.log(i);
+  console.log(i);
 }
+```
 
-4️⃣ Print Multiplication Table
+---
 
-Problem: Accept a number and print its multiplication table up to 10.
+### 4️⃣ Print Multiplication Table  
+**Problem:** Accept a number and print its multiplication table up to 10.  
 
+```js
 let n = Number(prompt("Enter the number"));
 for (let i = 1; i <= 10; i++) {
-    console.log(`${n} * ${i} = ${n * i}`);
+  console.log(`${n} * ${i} = ${n * i}`);
 }
+```
 
-5️⃣ Sum of Natural Numbers up to N
+---
 
-Problem: Calculate the sum of numbers from 1 to n.
+### 5️⃣ Sum of Natural Numbers up to N  
+**Problem:** Calculate the sum of numbers from 1 to `n`.  
 
+```js
 let n = Number(prompt("Enter a number"));
 let sum = 0;
 for (let i = 1; i <= n; i++) {
-    sum = sum + i;
+  sum = sum + i;
 }
 console.log(sum);
+```
 
-6️⃣ Factorial of a Number
+---
 
-Problem: Find the factorial of a given number n.
+### 6️⃣ Factorial of a Number  
+**Problem:** Find the factorial of a given number `n`.  
 
+```js
 let n = Number(prompt("Enter a number"));
 let fact = 1;
 for (let i = 1; i <= n; i++) {
-    fact = fact * i;
+  fact = fact * i;
 }
 console.log(fact);
+```
 
-7️⃣ Sum of Even and Odd Numbers Separately
+---
 
-Problem: Print the sum of all even and odd numbers from 1 to n separately.
+### 7️⃣ Sum of Even and Odd Numbers Separately  
+**Problem:** Print the sum of all even and odd numbers from 1 to `n` separately.  
 
+```js
 let n = Number(prompt("Enter a number"));
 let evenSum = 0, oddSum = 0;
 for (let i = 1; i <= n; i++) {
-    if (i % 2 == 0) evenSum = evenSum + i;
-    else oddSum = oddSum + i;
+  if (i % 2 == 0) evenSum = evenSum + i;
+  else oddSum = oddSum + i;
 }
 console.log("Even Sum: " + evenSum);
 console.log("Odd Sum: " + oddSum);
+```
 
-8️⃣ Print All Factors of a Number
+---
 
-Problem: Accept a number and print all its factors.
+### 8️⃣ Print All Factors of a Number  
+**Problem:** Accept a number and print all its factors.  
 
+```js
 let n = Number(prompt("Enter a number"));
 for (let i = 1; i <= n / 2; i++) {
-    if (n % i == 0) console.log(i);
+  if (n % i == 0) console.log(i);
 }
 console.log(n);
+```
 
-9️⃣ Check Prime Number
+---
 
-Problem: Check if a number is prime or not.
+### 9️⃣ Check Prime Number  
+**Problem:** Check if a number is prime or not.  
 
+```js
 let n = Number(prompt("Enter a number"));
 let isPrime = true;
 
 for (let i = 2; i <= n / 2; i++) {
-    if (n % i == 0) {
-        isPrime = false;
-        break;
-    }
+  if (n % i == 0) {
+    isPrime = false;
+    break;
+  }
 }
 
 if (isPrime) console.log("Prime Number");
 else console.log("Not a Prime Number");
+```
 
-🔟 Power of a Number (a^b)
+---
 
-Problem: Accept two numbers a and b, and calculate a raised to the power of b.
+### 🔟 Power of a Number (a^b)  
+**Problem:** Accept two numbers `a` and `b`, and calculate `a` raised to the power of `b`.  
 
-Way 1: Using Exponentiation Operator
-
+**Way 1: Using Exponentiation Operator**
+```js
 let a = Number(prompt("Enter number a"));
 let b = Number(prompt("Enter number b"));
 let ans = a ** b;
 console.log(ans);
+```
 
-
-Way 2: Using Math.pow()
-
+**Way 2: Using Math.pow()**
+```js
 let a = Number(prompt("Enter number a"));
 let b = Number(prompt("Enter number b"));
 let ans = Math.pow(a, b);
 console.log(ans);
+```
+
+---
+
 ---
 
 ✅ **Practice these questions to strengthen your understanding of conditionals!** 🚀

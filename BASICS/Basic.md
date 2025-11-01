@@ -1,7 +1,7 @@
 
 ---
 
-# 📌Lecture 26 - Introduction  
+# 📌Lecture 1 - Introduction  
 
 Welcome to my **DSA Basics** documentation! 🚀  
 
@@ -18,7 +18,7 @@ Let's dive into the world of **DSA** and strengthen problem-solving skills! 💡
 
 ---
 
-# 📌Lecture 27 - JavaScript Basics - DSA Notes
+# 📌Lecture 2 - JavaScript Basics - DSA Notes
 
 ## 1. Sum of Two Integers
 ```js
@@ -142,7 +142,7 @@ console.log(10 > 8 || 19 > 5 || 17 > 7); // true (OR operator)
 ```
 ---
 
-## 💡 Assignment - Lecture 27  
+## 💡 Assignment - Lecture 2  
 
 ### 📝 **Topic:** Increment & Decrement Operators in JavaScript  
 
@@ -210,7 +210,7 @@ console.log("i=" + i); // Output: 19
 console.log("j=" + j); // Output: 28
 console.log("k=" + k); // Output: -1
 ```
-# 📌 Lecture 28 - JavaScript Math Functions & Problems 🚀
+# 📌 Lecture -3 JavaScript Math Functions & Problems 🚀
 
 ## ✨ Math Functions in JavaScript 🧮
 
@@ -285,7 +285,7 @@ if (a + b <= c || a + c <= b || b + c <= a) {
 let r = Number(prompt("Enter radius"));
 console.log("Circumference: ", 2 * Math.PI * r);
 ```
-# 📌 Lecture 29 - JavaScript Conditionals 🚀
+# 📌 Lecture 4 - JavaScript Conditionals 🚀
 
 ## ✨ Understanding Conditionals
 Conditionals allow a program to make decisions based on conditions, executing different blocks of code accordingly.
@@ -432,7 +432,149 @@ if (age >= 18) {
        }else isLeap = false              
      console.log(isLeap? "leap year": "not a leap year");
 ```
+📌 Lecture 5 - JavaScript Loops 🚀
+✨ Understanding Loops
 
+Loops allow us to repeat a block of code multiple times until a certain condition is met.
+They are essential for automating repetitive tasks and working with data efficiently.
+
+🔹 for Loop
+
+Used when the number of iterations is known.
+
+Syntax:
+
+for (initialization; condition; increment/decrement) {
+    // Code to execute repeatedly
+}
+
+
+Example:
+
+for (let i = 1; i <= 5; i++) {
+    console.log("Hello World");
+}
+
+
+✅ The for loop is the most commonly used loop for counting, tables, and mathematical calculations.
+
+📌 Practice Questions - Loops in JavaScript
+1️⃣ Print "Hello World" N Times
+
+Problem: Accept an integer n and print "Hello World" n times.
+
+let n = Number(prompt("Enter the number"));
+for (let i = 1; i <= n; i++) {
+    console.log("Hello World");
+}
+
+2️⃣ Print Natural Numbers up to N
+
+Problem: Accept a number n and print all natural numbers from 1 to n.
+
+let n = Number(prompt("Enter the number"));
+for (let i = 1; i <= n; i++) {
+    console.log(i);
+}
+
+3️⃣ Print Numbers in Reverse (N to 1)
+
+Problem: Accept a number n and print numbers from n to 1 in reverse.
+
+let n = Number(prompt("Enter the number"));
+for (let i = n; i >= 1; i--) {
+    console.log(i);
+}
+
+4️⃣ Print Multiplication Table
+
+Problem: Accept a number and print its multiplication table up to 10.
+
+let n = Number(prompt("Enter the number"));
+for (let i = 1; i <= 10; i++) {
+    console.log(`${n} * ${i} = ${n * i}`);
+}
+
+5️⃣ Sum of Natural Numbers up to N
+
+Problem: Calculate the sum of numbers from 1 to n.
+
+let n = Number(prompt("Enter a number"));
+let sum = 0;
+for (let i = 1; i <= n; i++) {
+    sum = sum + i;
+}
+console.log(sum);
+
+6️⃣ Factorial of a Number
+
+Problem: Find the factorial of a given number n.
+
+let n = Number(prompt("Enter a number"));
+let fact = 1;
+for (let i = 1; i <= n; i++) {
+    fact = fact * i;
+}
+console.log(fact);
+
+7️⃣ Sum of Even and Odd Numbers Separately
+
+Problem: Print the sum of all even and odd numbers from 1 to n separately.
+
+let n = Number(prompt("Enter a number"));
+let evenSum = 0, oddSum = 0;
+for (let i = 1; i <= n; i++) {
+    if (i % 2 == 0) evenSum = evenSum + i;
+    else oddSum = oddSum + i;
+}
+console.log("Even Sum: " + evenSum);
+console.log("Odd Sum: " + oddSum);
+
+8️⃣ Print All Factors of a Number
+
+Problem: Accept a number and print all its factors.
+
+let n = Number(prompt("Enter a number"));
+for (let i = 1; i <= n / 2; i++) {
+    if (n % i == 0) console.log(i);
+}
+console.log(n);
+
+9️⃣ Check Prime Number
+
+Problem: Check if a number is prime or not.
+
+let n = Number(prompt("Enter a number"));
+let isPrime = true;
+
+for (let i = 2; i <= n / 2; i++) {
+    if (n % i == 0) {
+        isPrime = false;
+        break;
+    }
+}
+
+if (isPrime) console.log("Prime Number");
+else console.log("Not a Prime Number");
+
+🔟 Power of a Number (a^b)
+
+Problem: Accept two numbers a and b, and calculate a raised to the power of b.
+
+Way 1: Using Exponentiation Operator
+
+let a = Number(prompt("Enter number a"));
+let b = Number(prompt("Enter number b"));
+let ans = a ** b;
+console.log(ans);
+
+
+Way 2: Using Math.pow()
+
+let a = Number(prompt("Enter number a"));
+let b = Number(prompt("Enter number b"));
+let ans = Math.pow(a, b);
+console.log(ans);
 ---
 
 ✅ **Practice these questions to strengthen your understanding of conditionals!** 🚀

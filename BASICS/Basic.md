@@ -612,6 +612,134 @@ console.log(ans);
 ```
 
 ---
+# 📘 Lecture 6 – JavaScript While Loop, Break & Continue, Switch Case, Numerical Problems
+
+Welcome to **Lecture 6**!  
+In this lecture, we learn:
+
+- `break` & `continue`
+- `while` loop basics
+- Sum of digits
+- Reverse of number
+- Automorphic number
+- `switch-case`
+- Simple pattern printing
+
+---
+
+## 🔁 Break and Continue
+
+### **break**
+Used to exit a loop immediately.
+
+### **continue**
+Skips the current iteration and moves to the next one.
+
+---
+
+## 🔄 While Loop
+
+The `while` loop runs as long as the condition is true.
+
+```js
+while(condition){
+  // code
+}
+```
+
+---
+
+# 🧮 Q1. Sum of Digits of a Number
+
+```js
+let n = Number(prompt("Enter the number"));
+let sum = 0;
+
+while(n > 0){
+  let rem = n % 10;      // extract last digit
+  sum = sum + rem;       // add to sum
+  n = Math.floor(n / 10); // remove last digit
+}
+
+console.log(sum);
+```
+
+---
+
+# 🔄 Q2. Reverse a Number
+
+```js
+let n = Number(prompt("Enter the number"));
+let rev = 0;
+
+while(n > 0){
+  let rem = n % 10;
+  rev = (rev * 10) + rem;
+  n = Math.floor(n / 10);
+}
+
+console.log(rev);
+```
+
+---
+
+# 🔢 Q3. Automorphic Number
+
+A number is **automorphic** if its square ends with the same number.  
+Example:  
+- 5 → 25  
+- 76 → 5776  
+
+```js
+let n = Number(prompt("Enter a number"));
+let copy = n;
+let sq = n * n;
+let count = 0;
+
+while(n > 0){
+  count++;
+  n = Math.floor(n / 10);
+}
+
+if (sq % Math.pow(10, count) == copy)
+  console.log("Automorphic Number");
+else
+  console.log("Not Automorphic Number");
+```
+
+---
+
+# 🔀 Switch Case Example
+
+```js
+let n = Number(prompt("Enter a number"));
+
+switch(n){
+  case 1 : console.log("Monday");
+  break;
+
+  case 2 : console.log("Tuesday");
+  break;
+
+  case 3 : console.log("Wednesday");
+  break;
+
+  case 4 : console.log("Thursday");
+  break;
+
+  default : console.log("Nothing");
+}
+```
+
+---
+
+# ⭐ Simple Pattern (Print 5 Stars in One Line)
+
+```js
+for(let i = 1; i <= 5; i++){
+  process.stdout.write("*");
+}
+```
 
 ---
 

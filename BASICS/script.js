@@ -213,3 +213,171 @@
  //6. Shop discount - Description on Graphic
 
  //7. Bijli Bil - Description on Graphic
+
+
+//DAY 5
+ ////loop practice questions
+ //Accept an integer and Print hello world n times
+// let n = Number(prompt("Enter the number"));
+// for(let i = 1; i<=n;i++){
+//   console.log("Hello Worlds");
+// }
+
+
+ //Print natural number up to n.
+// let n = Number(prompt("Enter the number"));
+// for(let i = 1;i<=n;i++){
+//   console.log( i);
+// }
+
+//  //Reverse for loop. Print n to 1.
+//  let n = Number(prompt("Enter the number"));
+// for(let i=n;i>=1;i--){
+//   console.log(i); 
+// }
+
+
+ //Take a number as input and print its table
+//  //5*1=5
+//  //5*2=10..up to 10 terms
+// let n = Number(prompt("Enter the number"));
+// for(let i = 1;i<=10;i++){
+//   console.log(n*i);  
+// }
+
+
+//  //sum up to n terms.
+// let n = Number(prompt("Enter a number"))
+// let sum = 0;
+// for(let i = 1;i<=n;i++){
+//   sum = sum + i;
+// }
+// console.log(sum);
+
+
+//  //Factorial of a number
+// let n = Number(prompt("Enter a number"))
+// let fact = 1;
+// for(let i = 1;i<=n;i++){
+//  fact =  fact * i;
+// }
+// console.log(fact);
+
+
+
+//  //Print the sum of all even & odd numvers in a range seperately.
+// let n = Number(prompt("Enter a number"));
+// let evenSum = 0,oddSum =0;
+// for(let i = 1;i<=n;i++){
+//   if(i%2==0) evenSum = evenSum + i;
+//   else oddSum = oddSum + i;
+// }
+// console.log("Even sum"+ evenSum);
+// console.log("Odd sum"+ oddSum);
+
+
+//  //Print all the factors of a number.
+// let n = Number(prompt("Enter a number"));
+// for(let i = 1;i<=n/2;i++){
+//   if(n%i==0) console.log(i);
+// }
+// console.log(n);
+
+
+
+//  //Check if the number is Prime or not.
+// let n = Number(prompt("Enter a number"));
+// let isPrime = true;
+// for(let i = 2;i<=n/2;i++){
+//   if(n%i==0){
+//     isPrime = false;
+//     break;
+//   }
+// }
+// if(isPrime) console.log("Prime Number");
+// else console.log("No Prime Number");
+
+//  //Write a program to take two inputs a,b & find the value of a raised to the power of b.
+//  //Ex-a=2,b=5
+//  //op-2^5=32
+//  //way1
+// let a = Number(prompt("Enter a number a"));
+// let b = Number(prompt("Enter a number b"));
+// let ans = a**b;
+// console.log(ans);
+
+// //way2
+// let a = Number(prompt("Enter a number a"));
+// let b = Number(prompt("Enter a number b"));
+// let ans = Math.pow(a,b);
+// console.log(ans);
+
+
+////DAY 6
+ //break and continue
+ //While loop
+//  //Q.sum of digit
+// let n = Number(prompt("Enter the number"));
+// let sum = 0;
+// while(n>0){
+//   let rem = n%10;
+//   sum = sum + rem;
+//   n = Math.floor(n/10);
+// }
+// console.log(sum);
+
+
+//  //Q.reverse of number
+// let n = Number(prompt("Enter the number"))
+// let rev = 0;
+// while(n>0){
+//   let rem = n%10;
+//   rev = (rev * 10)+rem;
+//   n = Math.floor(n/10)
+// }
+// console.log(rev);
+
+
+ ////Q.Automorphic number
+// let n = Number (prompt("Enter a number"));
+// let copy = n;
+// let sq = n * n;
+// let count = 0;
+// while(n>0){
+//   count ++;
+//   n = Math.floor(n/10)
+// }
+// if(sq%Math.pow(10,count)==copy) console.log("Automorphic Number");
+// else console.log("Not Automorphic Number");
+
+
+// // switch case
+
+// let n = Number(prompt("Enter a number"));
+// switch(n){
+//   case 1 : console.log("Monday");
+//   break
+//   case 2 : console.log("Tuesday");
+//   break;
+//   case 3 : console.log("Wednesday");
+//   break;
+//   case 4 : console.log("Thusday");
+//   break;
+// default : ("Nothing")
+// }
+
+// for(let i = 1;i<=5;i++){
+//  process.stdout.write("*")
+// }
+
+
+
+
+
+
+
+
+
+
+
+
